@@ -1,0 +1,61 @@
+# Node.js / Express
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+VENV/
+*.env
+*.venv
+*.egg-info/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# VSCode
+.vscode/
+
+# MySQL dumps
+*.sql
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Output
+dist/
+build/
+coverage/
+htmlcov/
+
+# Misc
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Dashboard build (if any)
+dashboard/dist/
+dashboard/build/
+dashboard/.cache/
+dashboard/node_modules/
+
+# Public uploads (if

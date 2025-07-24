@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard Super Admin - MonBot Affiliation</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <!-- Connexion Super Admin -->
+  <div id="login-section" class="login-box">
+    <h2>Connexion Super Admin</h2>
+    <p>Entre ton ID Telegram pour accéder au dashboard admin.</p>
+    <input type="text" id="telegram_id" placeholder="ID Telegram" required>
+    <button id="login-btn">Se connecter</button>
+    <div id="login-error" class="error-msg"></div>
+  </div>
+
+  <!-- Dashboard Super Admin -->
+  <div id="admin-dashboard" class="dashboard hidden">
+    <aside class="sidebar">
+      <h2>MonBot Affiliation</h2>
+      <nav>
+        <ul>
+          <li><a href="#" id="nav-global">Statistiques Globales</a></li>
+          <li><a href="#" id="nav-users">Utilisateurs</a></li>
+          <li><a href="#" id="nav-campagnes">Campagnes</a></li>
+          <li><a href="#" id="nav-groups">Groupes/Canaux</a></li>
+          <li><a href="#" id="nav-links">Liens affiliés</a></li>
+          <li><a href="#" id="nav-parrainage">Parrainage</a></li>
+          <li><a href="#" id="nav-support">Support</a></li>
+          <li><a href="#" id="nav-payments">Paiements</a></li>
+          <li><a href="#" id="nav-campaign-logs">Logs Campagnes</a></li>
+          <li><a href="#" id="nav-templates">Modèles de messages</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <header>
+        <h1>Dashboard Super Admin</h1>
+        <div class="user-info">
+          <span id="admin-id"></span>
+          <span id="admin-role">Super Admin</span>
+        </div>
+      </header>
+      <section id="stats-tiles" class="tiles"></section>
+      <section id="users-table"></section>
+      <section id="campaigns-table"></section>
+      <section id="groups-table"></section>
+      <section id="links-table"></section>
+      <section id="parrainage-section"></section>
+      <section id="support-section"></section>
+      <section id="payments-table"></section>
+      <section id="admin-logs-table"></section>
+      <section id="group-logs-table"></section>
+      <section id="campaign-logs-table"></section>
+      <section id="templates-table"></section>
+    </main>
+  </div>
+  <script src="js/admin.js"></script>
+</body>
+</html>
