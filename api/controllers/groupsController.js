@@ -118,3 +118,14 @@ exports.getGroupLogs = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+
+// Récupérer tous les groupes d'un utilisateur (propre + tiers)
+exports.getGroupsByUser = async (req, res) => {
+  const { user_id } = req.params;
+  try {
+    const [rows] = await db.execute('SELECT * FROM groups WHERE user_id = ?', [user_id]);
+    res.json(rows);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
