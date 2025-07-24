@@ -557,9 +557,9 @@ window.editTemplate = function(id) {
 window.submitEditTemplate = function(id) {
   const label = document.getElementById('edit-template-label').value;
   const content = document.getElementById('edit-template-content').value;
-};
-window.submitEditTemplate = function(id) {
-  const label = document.getElementById('edit-template-label').value;
+  fetch(`${API_BASE}/templates/${id}`, {
+    method: 'PUT',
+    headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({ label, content })
   }).then(() => {
     loadTemplates();
